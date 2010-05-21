@@ -72,7 +72,7 @@ module ActiveRecord
       # Validates whether the value of the specified attribute is a valid email address
       #
       #   class User < ActiveRecord::Base
-      #     validates_email_format_of :email, :on => :create
+      #     validates_greek_vat_number_format_of :vatnumber, :on => :create
       #   end
       #
       # Configuration options:
