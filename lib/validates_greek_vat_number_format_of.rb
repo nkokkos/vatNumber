@@ -69,14 +69,14 @@ end
 module ActiveRecord
   module Validations
     module ClassMethods
-      # Validates whether the value of the specified attribute is a valid email address
+      # Validates whether the value of the specified attribute is a valid greek vat number 
       #
       #   class User < ActiveRecord::Base
       #     validates_greek_vat_number_format_of :vatnumber, :on => :create
       #   end
       #
       # Configuration options:
-      # * <tt>message</tt> - A custom error message (default is: "does not appear to be a valid e-mail address")
+      # * <tt>message</tt> - A custom error message (default is: "does not appear to be a valid greek vat number")
       # * <tt>on</tt> - Specifies when this validation is active (default is :save, other options :create, :update)
       # * <tt>allow_nil</tt> - Allow nil values (default is false)
       # * <tt>allow_blank</tt> - Allow blank values (default is false)
