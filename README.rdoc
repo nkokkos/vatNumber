@@ -1,0 +1,48 @@
+= validates_greek_vat_number_format of  Rails Plugin
+
+Validates greek vat number format 
+
+== Installation
+
+Installing as a Ruby on Rails plugin:
+
+  ./script/plugin install http://github.com/nkokkos/validates_greek_vat_number_of.git
+
+
+== Usage
+
+ class Person < ActiveRecord::Base
+   validates_greek_vat_number_format_of :vatnumber
+ end
+
+=== Options
+
+  :message
+     String. A custom error message (default is: " does not appear to be a valid e-mail address")
+  :on
+     Symbol. Specifies when this validation is active (default is :save, other options :create, :update)
+  :allow_nil
+     Boolean. Allow nil values (default is false)
+  :allow_blank
+     Boolean. Allow blank values (default is false)
+  :if
+     Specifies a method, proc or string to call to determine if the validation should occur 
+     (e.g. :if => :allow_validation, or :if => Proc.new { |user| user.signup_step > 2 }). The method, 
+     proc or string should return or evaluate to a true or false value. 
+  :unless
+     See :if option.
+
+== Testing
+
+Need to write testing procedures
+
+
+== Resources
+
+* http://github.com/nkokkos/validates_greek_vat_number_format_of
+
+== Credits
+
+Written by Nick Kokkos (2010)
+
+Much credit goes to Alex Dunae for writing http://github.com/alexdunae/validates_email_format_of
