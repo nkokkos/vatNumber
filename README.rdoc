@@ -1,4 +1,4 @@
-= validates_greek_vat_number_format of  Rails Plugin
+vatNumber old Rails Plugin
 
 Validates greek vat number format 
 
